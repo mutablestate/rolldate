@@ -29,9 +29,7 @@ function Rolldate(config = {}){
   // 设置默认日期
   if(config.value){
     if(config.el){
-      if(el.nodeName.toLowerCase() == 'input'){
-        el.value = config.value;
-      }else{
+      if(el.nodeName.toLowerCase() !== 'input'){
         el.innerText = config.value;
       }
     }
